@@ -1,14 +1,16 @@
-function getRandomInt(){
-    return Math.floor(Math.random() * 3);
+function getComputerChoice(){
+    const randomInt = Math.floor(Math.random() * 3)
+
+    if (randomInt === 0) {
+    return "rock"; }
+    else if (randomInt === 1){
+    return "paper"; } 
+    else {
+    return "scissors";}
     
 
 }
 
-console.log(getRandomInt())
-
-
-
-
-
+console.log(getComputerChoice())
 
 
