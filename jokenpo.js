@@ -1,13 +1,9 @@
-//sets initial score
+
 let humanScore = 0;
 let computerScore = 0;
-
-//sets initial round
 let round = 1;
 
 
-
-// prompts player to choose rock, paper or scissors
 function getHumanChoice() {
     
     const choice = prompt("Rock, paper or scissors?").toLowerCase();
@@ -16,8 +12,6 @@ function getHumanChoice() {
 } 
 
 
-
-// makes computer choose rock, paper or scissors at random
 function getComputerChoice(){
     const randomNum = Math.floor(Math.random() * 3)
 
@@ -34,7 +28,6 @@ function getComputerChoice(){
 }
 
 
-// Keeps track of rounds, compares userChoice and computerChoice to determine who wins each round and tallies score
 function playRound(humanChoice, computerChoice) {
 
     console.log(`Round ${ round }`);
@@ -64,7 +57,7 @@ function playRound(humanChoice, computerChoice) {
 
 }
 
-//Sets the game to repeat for 5 rounds, declares scores per round, compares final score and declares the winner 
+
 function playGame() {
     if(round < 6) {
         
