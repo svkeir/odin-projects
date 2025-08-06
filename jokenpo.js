@@ -3,7 +3,7 @@ let humanScore = 0;
 let computerScore = 0;
 
 //sets initial round
-let round = 0;
+let round = 1;
 
 
 
@@ -34,10 +34,10 @@ function getComputerChoice(){
 }
 
 
-
+// Keeps track of rounds, compares userChoice and computerChoice to determine who wins each round and tallies score
 function playRound(humanChoice, computerChoice) {
 
-    console.log(`Round ${ round + 1 }`);
+    console.log(`Round ${ round }`);
 
     console.log("You choose" + " " + humanChoice);
     console.log("Computer chooses" + " " + computerChoice);
@@ -64,8 +64,9 @@ function playRound(humanChoice, computerChoice) {
 
 }
 
+//Sets the game to repeat for 5 rounds, declares scores per round, compares final score and declares the winner 
 function playGame() {
-    if(round < 5) {
+    if(round < 6) {
         
         const humanSelection = getHumanChoice();
         const computerSelection = getComputerChoice();
@@ -78,7 +79,6 @@ function playGame() {
 
          playGame();
 
-         
 
     
     }
